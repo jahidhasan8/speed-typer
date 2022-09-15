@@ -8,16 +8,16 @@
   </head>
   <body>
 
-    <main class="container mt-5">
+    <main class="container mt-5 ">
         <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                <button class="accordion-button fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
                     Difference Between Local Storage, Session Storage?
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                <div class="accordion-body fs-5">
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body fs-6">
                   <strong>Local Storage:</strong> 
                   <ul>
                     <li>The storage capacity of local storage is 5MB/10MB.</li>
@@ -43,16 +43,16 @@
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                   Difference Between Global Scope and Block Scope
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                <div class="accordion-body fs-5">
+                <div class="accordion-body fs-6">
                   <strong>Global Scope</strong>
                   A variable exists inside or outside a block. If a variable is declared outside all functions or curly brackets ({}), it exists in the global scope.Global scope means that the variables can be accessed from any part of that program, any function or conditional state can access that variable. The global variables can be accessed by any line of code in the program, including inside blocks. <br> <br>
                   <strong>Block Scope</strong>
-                  Block scope is a sub-type of local scope. The block scope can be defined as the scope of the variables inside the curly brackets {}. Now, these curly brackets can be of loops, or conditional statements, or something else. You are only allowed to refer to these variables from within the curly brackets {}.The variables that are declared within the block scope are comparable to local ones. They are available within the block that they are defined.let & const are also called as block scope that is they are accessible within that particular block. Here let is used for variable which can be changed as we proceed through the program whereas const is used for a variable which doesn’t change till the program ends. <br>
+                  Block scope is a sub-type of local scope. The block scope can be defined as the scope of the variables inside the curly brackets {}. Now, these curly brackets can be of loops, or conditional statements, or something else. You are only allowed to refer to these variables from within the curly brackets {}.The variables that are declared within the block scope are comparable to local ones. They are available within the block that they are defined.let & const are also called as block scope that is they are accessible within that particular block. Here let is used for variable which can be changed as we proceed through the program whereas const is used for a variable which doesn’t change till the program ends. <br> <br>
                   Main difference of Global and Block scope is , global variable is accessible from anywhere part of the program but block scope variable can not accessible from anywhere part of the program.
 
                 </div>
@@ -60,12 +60,12 @@
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                   How Javascript event loop works?
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                <div class="accordion-body fs-5">
+                <div class="accordion-body fs-6">
                     JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks. The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from the Task Queue to the Call Stack. Once the Stack is clear, the event loop triggers and checks the Task Queue for available callbacks. If there are any, it pushes it to the Call Stack, waits for the Call Stack to be clear again, and repeats the same process.
                 
                 </div>
@@ -73,12 +73,12 @@
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                <button class="accordion-button collapsed fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                   How Many Ways We Can Get Undefined?
                 </button>
               </h2>
               <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                <div class="accordion-body fs-5">
+                <div class="accordion-body fs-6">
                     The undefined is a primitive type in JavaScript. So the undefined is a type. And the undefined type has exactly one value that is undefined.Few ways we can get undefined. <br>
                     <strong>1) Accessing an uninitialized variable:</strong>
                     When you declare a variable and don’t initialize it to a value, the variable will have a value of undefined. <br>
