@@ -26,6 +26,7 @@ const typeController = (e) => {
   // Handle backspace press
   if (newLetter == "Backspace") {
     userText = userText.slice(0, userText.length - 1);
+    errorCount++
     return display.removeChild(display.lastChild);
   }
 
@@ -80,6 +81,7 @@ const gameOver = () => {
   
   // modalBackground.style.display = "flex";
   // show result
+  
   resultModal.innerHTML += `
   
     <h1>Finished!</h1>
