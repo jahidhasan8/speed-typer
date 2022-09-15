@@ -152,7 +152,7 @@ button {
   height: 100%;
   padding: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 20px 30px;
   color: white;
@@ -198,6 +198,9 @@ button {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 10px;
+  }
+  .card{
+       flex-direction: column;
   }
  
 }
