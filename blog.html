@@ -1,12 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Site</title>
-</head>
-<body>
-     <h1>Welcome to blog</h1>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <main class="container mt-5">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button fs-2" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    Difference Between Local Storage, Session Storage?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body fs-5">
+                  <strong>Local Storage:</strong> 
+                  <ul>
+                    <li>The storage capacity of local storage is 5MB/10MB.</li>
+                    <li>As it is not session-based, it must be deleted via javascript or manually.</li>
+                    <li>The client  can only read local storage.</li>
+                    <li> There is no transfer of data to the server.</li>
+                    <li>There are fewer old browsers that support it.</li>
+                    <li>Local Storage is a new feature introduced in HTML5</li>
+                    <li>This is especially useful for storing data that you want to persist even if the user closes the browser, such as preferences or settings.</li>
+                  </ul>
+                   <br> <strong>Session Storage</strong>
+                   <ul>
+                    <li>The storage capacity of session storage is 5MB.</li>
+                    <li>It’s session-based and works per window or tab.</li>
+                    <li>This means that data is stored only for the duration of a session, i.e., until the browser (or tab) is closed.</li>
+                    <li>The client can only read session storage.There is no transfer of data to the server.</li>
+                    <li>There are fewer old browsers that support it</li>
+                    <li>Session Storage is a new feature introduced in HTML5</li>
+                    <li>Session storage is useful for storing data that is sensitive, such as login credentials.</li>
+                   </ul>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
 </html>
